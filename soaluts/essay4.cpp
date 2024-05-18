@@ -1,18 +1,19 @@
 #include <iostream>
 
-// Function for multiplication
-double perkalian(double a, double b) {
-    return a * b;
+// Function for addition
+double penambahan(double a, double b) {
+    return a + b;
 }
+
 
 // Function for subtraction
 double pengurangan(double a, double b) {
     return a - b;
 }
 
-// Function for addition
-double penambahan(double a, double b) {
-    return a + b;
+// Function for multiplication
+double perkalian(double a, double b) {
+    return a * b;
 }
 
 // Function for division
@@ -27,10 +28,10 @@ double pembagian(double a, double b) {
 
 int main() {
     while (true) {
-        std::cout << "Pilih operasi:" << std::endl;
-        std::cout << "1. Perkalian" << std::endl;
+        std::cout << "Menu Operasi:" << std::endl;
+        std::cout << "1. Penambahan" << std::endl;
         std::cout << "2. Pengurangan" << std::endl;
-        std::cout << "3. Penambahan" << std::endl;
+        std::cout << "3. Perkalian" << std::endl;
         std::cout << "4. Pembagian" << std::endl;
         std::cout << "5. Keluar" << std::endl;
         int pilihan;
@@ -47,11 +48,11 @@ int main() {
         std::cin >> angka2;
 
         if (pilihan == 1) {
-            std::cout << angka1 << " * " << angka2 << " = " << perkalian(angka1, angka2) << std::endl;
+            std::cout << angka1 << " + " << angka2 << " = " << penambahan(angka1, angka2) << std::endl;
         } else if (pilihan == 2) {
             std::cout << angka1 << " - " << angka2 << " = " << pengurangan(angka1, angka2) << std::endl;
         } else if (pilihan == 3) {
-            std::cout << angka1 << " + " << angka2 << " = " << penambahan(angka1, angka2) << std::endl;
+            std::cout << angka1 << " * " << angka2 << " = " << perkalian(angka1, angka2) << std::endl;
         } else if (pilihan == 4) {
             std::cout << angka1 << " / " << angka2 << " = " << pembagian(angka1, angka2) << std::endl;
         } else {
