@@ -17,7 +17,7 @@ while (pilih !='5') is (control statement)
                 :Get Input (a,b);
                 :Call bagi (a,b);
         else
-                :Display "Pilihan Salah!";
+                :Display "Keluar!";
         endif
 endwhile (control statement)
 :Display "EXIT";
